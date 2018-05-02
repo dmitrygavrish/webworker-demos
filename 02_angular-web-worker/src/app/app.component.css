@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#start-calculations {
+  width: 200px;
+  height: 200px;
+}
+
+#start-calculations:hover {
+  background-color: green;
+}

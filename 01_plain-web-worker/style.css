@@ -1,0 +1,43 @@
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(240px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.bar {
+    position: relative;
+    width: 300px;
+    height: 30px;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.sliding-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 30px;
+    background-color: blue;
+}
+
+.sliding-block.animate {
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+#start-calculations {
+    width: 200px;
+    height: 200px;
+}
+
+#start-calculations:hover {
+    background-color: green;
+}
